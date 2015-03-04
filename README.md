@@ -70,3 +70,4 @@ rlegm.C0 = rlc0 * CFrame.Angles(angle*0.27, 0, angle*0.05)
 llegm.C0 = llc0 * CFrame.Angles(-angle*0.27, 0, angle*0.05)
 end
 end
+print'x'
