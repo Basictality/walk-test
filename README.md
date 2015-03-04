@@ -59,8 +59,8 @@ angle = math.pi * math.sin(math.pi*2/100*count)
 if Vector3.new(torso.Velocity.x, 0, torso.Velocity.z).magnitude < 2 then
 countspeed = 1
 --Idle anim
-rlegm.C0 = rlc0 * CFrame.Angles(angle*0.025, 0, 0)
-llegm.C0 = llc0 * CFrame.Angles(-angle*0.025, 0, 0)
+rlegm.C0 = rlc0 * CFrame.Angles(angle*0.025, 0, 25)
+llegm.C0 = llc0 * CFrame.Angles(-angle*0.025, 0, 25)
 rm.C0 = rsc0 * CFrame.Angles(-angle*0.05, 0, 0)
 lm.C0 = lsc0 * CFrame.Angles(angle*0.05, 0, 0)
 elseif Vector3.new(torso.Velocity.x, 0, torso.Velocity.z).magnitude > 2 then
