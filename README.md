@@ -1,5 +1,4 @@
-local tool = Instance.new("Tool",game.Players.LocalPlayer.Backpack)
-tool.Name = "basicsball"
+
 
 --//Wait
 Player	= game.Players.LocalPlayer
@@ -25,8 +24,8 @@ local Weld				= Instance.new("Weld", Ball)
 Weld.Part0			= Ball
 Weld.Part1			= Torso
 
-Ball.Parent 		= tool
-Humanoid.Sit		= true
+Ball.Parent 		= Character
+Humanoid.Sit		= false
 
 Camera.CameraType	 = Enum.CameraType.Track
 Camera.CameraSubject = Ball
