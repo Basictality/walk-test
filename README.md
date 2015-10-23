@@ -22,7 +22,7 @@ Ball.Anchored		= false
 Ball.CanCollide		= true
 Ball.FormFactor		= Enum.FormFactor.Symmetric
 Ball.Shape			= Enum.PartType.Ball
-Ball.Size			= Vector3.new(8, 8, 8)
+Ball.Size			= Vector3.new(20, 20, 20)
 Ball.TopSurface		= Enum.SurfaceType.SmoothNoOutlines
 Ball.BottomSurface	= Enum.SurfaceType.SmoothNoOutlines
 	
