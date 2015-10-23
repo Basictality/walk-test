@@ -36,8 +36,8 @@ Direction = {W = 0, A = 0, S = 0, D = 0}
 MaxVelocity			= 500 -- Maximum marble speed
 Acceleration		= 5	  -- Rate at which speed changes
 
-Ball.Elasticity 	= 0 	-- Bounciness (0 - 1)
-Ball.Friction		= 1		-- How well it sticks to the ground (0 - 2)
+Ball.Elasticity 	= 1 	-- Bounciness (0 - 1)
+Ball.Friction		= 0		-- How well it sticks to the ground (0 - 2)
 Ball.Transparency	= 0.5
 Ball.BrickColor		= BrickColor.new("White")
 Ball.Material		= Enum.Material.Marble
@@ -105,8 +105,8 @@ function BallChanged()
 end
 
 function HumanoidChanged() -- Prevents players from standing up
-	Humanoid.Jump	= false	
-	Humanoid.Sit 	= true
+	Humanoid.Jump	= true
+	Humanoid.Sit 	= false
 end
 
 function HumanoidDied()
