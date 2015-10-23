@@ -1,11 +1,5 @@
---[[
-	Instructions:
-	1. Put this script inside "StarterGui"
-	2. Only edit anything under the "Settings" tab.
-	3. Happy rolling!
-	
-	--Warriorqaz || <AstroCode/>
---]]
+local tool = Instance.new("Tool",game.Players.LocalPlayer.Backpack)
+tool.Name = "basicsball"
 
 --//Wait
 Player	= game.Players.LocalPlayer
@@ -22,7 +16,7 @@ Ball.Anchored		= false
 Ball.CanCollide		= true
 Ball.FormFactor		= Enum.FormFactor.Symmetric
 Ball.Shape			= Enum.PartType.Ball
-Ball.Size			= Vector3.new(20, 20, 20)
+Ball.Size			= Vector3.new(10, 10, 10)
 Ball.TopSurface		= Enum.SurfaceType.SmoothNoOutlines
 Ball.BottomSurface	= Enum.SurfaceType.SmoothNoOutlines
 	
@@ -31,7 +25,7 @@ local Weld				= Instance.new("Weld", Ball)
 Weld.Part0			= Ball
 Weld.Part1			= Torso
 
-Ball.Parent 		= Character
+Ball.Parent 		= tool
 Humanoid.Sit		= true
 
 Camera.CameraType	 = Enum.CameraType.Track
@@ -40,7 +34,7 @@ Camera.CameraSubject = Ball
 Direction = {W = 0, A = 0, S = 0, D = 0}
 
 --//Settings
-MaxVelocity			= 100 -- Maximum marble speed
+MaxVelocity			= 500 -- Maximum marble speed
 Acceleration		= 5	  -- Rate at which speed changes
 
 Ball.Elasticity 	= 0 	-- Bounciness (0 - 1)
